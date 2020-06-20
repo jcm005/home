@@ -47,7 +47,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>My Story.</h1>
+              <h1 className={classes.title}>My Latest Work.</h1>
               <h4>
                 
               </h4>
@@ -59,7 +59,7 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <ProductSection />
+          
           
         </div>
       </div>

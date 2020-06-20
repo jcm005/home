@@ -29,39 +29,34 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       
       <ListItem className={classes.listItem}>
-        <Button
-          href=''
-          color="transparent"
-          className={classes.link}
-          >nopr
-          </Button>
+        <Link to={"/"} className={classes.link}>
+            <Button color="info" size="lg" simple>
+              Home
+            </Button>
+          </Link>
       </ListItem>      
       <ListItem className={classes.listItem}>
-        <Button
-          href="/landing-page"
-          color="transparent"
-          className={classes.link}
-          >Projects
-          </Button>
+        <Link to={"/landing-page"} className={classes.link}>
+            <Button color="info" size="lg" simple>
+              Projects
+            </Button>
+          </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="/profile-page"
-          color="transparent"
-          className={classes.link}
-          >About Me
-          </Button>
+        <Link to={"/profile-page"} className={classes.link}>
+            <Button color="info" size="lg" simple>
+              About Me
+            </Button>
+          </Link>
       </ListItem>
       
       <ListItem className={classes.listItem}>
-        <Button
-          href="/login-page"
-          color="transparent"
-          className={classes.link}
-          >Contact Me
-          
+        <Link to={"/login-page"} className={classes.link}>
+            <Button color="info" size="lg" simple>
+              Contact Me
+            </Button>
+          </Link>
 
-          </Button>
       </ListItem>
       
       <ListItem className={classes.listItem}>
