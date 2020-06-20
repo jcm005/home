@@ -1,6 +1,7 @@
 import React from "react";
 // plugin that creates slider
 import Slider from "nouislider";
+import classNames from "classnames"
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -21,6 +22,12 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
 import Paginations from "components/Pagination/Pagination.js";
 import Badge from "components/Badge/Badge.js";
+import profile from "assets/img/faces/plot.jpg";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import CardFooter from "components/Card/CardFooter.js";
+import team1 from "assets/img/faces/avatar.jpg";
+
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.js";
 
@@ -32,6 +39,11 @@ export default function SectionBasics() {
   const [selectedEnabled, setSelectedEnabled] = React.useState("b");
   const [checkedA, setCheckedA] = React.useState(true);
   const [checkedB, setCheckedB] = React.useState(false);
+  const imageClasses = classNames(
+    classes.imgRaised,
+    classes.imgRounded,
+    classes.imgFluid
+  );
   React.useEffect(() => {
     if (
       !document
@@ -72,38 +84,68 @@ export default function SectionBasics() {
     <div className={classes.sections}>
       <div className={classes.container}>
         <div className={classes.title}>
-          <h2>Projects</h2>
+          <h2 className={classes.title}>Projects</h2>
+      
         </div>
 
 
-
-        <div id="buttons">
+        <div id="Quant" className={classes.container}>
+          <div className={classes.title}>
+            <h2 className={classes.title}>
+              <Button href='https://github.com/jcm005/QuantitativeTrader' 
+              color='transparent' 
+              className={classes.largeTitle}
+              size='lg'
+              >
+              Quantitative Trading
+              </Button>
+            </h2>
+          </div>
+        <GridContainer justify="align-right">
+            
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <img src={profile} alt="..." className={imageClasses} />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Gigi Hadid
+                <br />
+                <small className={classes.smallTitle}>Model</small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  You can write here details about one of your team members. You
+                  can give more details about what they do. Feel free to add
+                  some <a href="#pablo">links</a> for people to be able to
+                  follow them outside the site.
+                </p>
+              </CardBody>
+              <CardFooter className={classes.justifyCenter}>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                >
+                  <i className={classes.socials + " fab fa-twitter"} />
+                </Button>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                >
+                  <i className={classes.socials + " fab fa-instagram"} />
+                </Button>
+                <Button
+                  justIcon
+                  color="transparent"
+                  className={classes.margin5}
+                >
+                  <i className={classes.socials + " fab fa-facebook"} />
+                </Button>
+              </CardFooter>
+            </Card>
+          </GridContainer>
           
-          <GridContainer justify="center">
-            <GridItem xs={12} sm={12} md={8}>
-            </GridItem>
-          </GridContainer>
-          <div className={classes.title}>
-            <h3>
-              <small>Pick your size</small>
-            </h3>
-          </div>
-          <GridContainer justify="center">
-            <GridItem xs={12} sm={12} md={8}>
-              <Button color="primary" size="sm">
-                Small
-              </Button>
-              <Button color="primary">Regular</Button>
-              <Button color="primary" size="lg">
-                Large
-              </Button>
-            </GridItem>
-          </GridContainer>
-          <div className={classes.title}>
-            <h3>
-              <small>Pick your color</small>
-            </h3>
-          </div>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={8}>
               <Button>Default</Button>

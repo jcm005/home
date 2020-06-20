@@ -38,7 +38,14 @@ const imagesStyles = {
     bottom: "0",
     left: "0",
     padding: "1.25rem"
+  },
+  imgCardRight: {
+
+    width: "10%",
+    height: 'auto'
   }
 };
 
 export default imagesStyles;
+
+  
