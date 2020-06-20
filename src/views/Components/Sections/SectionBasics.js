@@ -84,42 +84,47 @@ export default function SectionBasics() {
     <div className={classes.sections}>
       <div className={classes.container}>
         <div className={classes.title}>
-          <h2 className={classes.title}>Projects</h2>
+          <h1 className={classes.title}>Projects</h1>
       
         </div>
 
 
-        <div id="Quant" className={classes.container}>
-          <div className={classes.title}>
-            <h2 className={classes.title}>
-              <Button href='https://github.com/jcm005/QuantitativeTrader' 
-              color='transparent' 
-              className={classes.largeTitle}
-              size='lg'
-              >
-              Quantitative Trading
-              </Button>
-            </h2>
-          </div>
-        <GridContainer justify="align-right">
+        
+         <GridContainer justify="center">
+
+          <div id="Quant" className={classes.container}>
+            
+              
+              
+            
             
             <Card plain>
+              <h3 className={classes.title}>Quantitative Trader</h3>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img src={profile} alt="..." className={imageClasses} />
               </GridItem>
+              <GridItem xs={12} sm={12} md={8}>
+              <CardBody>
+                <p className={classes.description}>
+                  In this project I developed two frameworks in Python that uses alpaca.markets API to trade paper and real stock, based on custom algorithms influenced by multitudes of indicators, and market research. 
+                  
+
+                </p>
+              </CardBody>
+                <Button href='https://github.com/jcm005/QuantitativeTrader' 
+                color='info' 
+                className={classes.largeTitle}
+                size='lg'
+                >
+                Check it Out On Github
+                </Button>
+              </GridItem>
               <h4 className={classes.cardTitle}>
-                Gigi Hadid
+                Some text here 
                 <br />
                 <small className={classes.smallTitle}>Model</small>
               </h4>
-              <CardBody>
-                <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
-                </p>
-              </CardBody>
+              
               <CardFooter className={classes.justifyCenter}>
                 <Button
                   justIcon
@@ -144,6 +149,7 @@ export default function SectionBasics() {
                 </Button>
               </CardFooter>
             </Card>
+           </div>
           </GridContainer>
           
           <GridContainer justify="center">
@@ -634,6 +640,6 @@ export default function SectionBasics() {
           </GridContainer>
         </div>
       </div>
-    </div>
+    
   );
 }
