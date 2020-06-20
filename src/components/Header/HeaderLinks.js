@@ -26,58 +26,38 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          buttonText="Projects"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            
-            <a
-              href="https://github.com/jcm005/QuantitativeTrader"
-              target="_blank"
-              className={classes.dropdownLink}
-            >Quantitative Trading
-              
-            </a>
-          ]}
-        />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link to={"/"} className={classes.link}>
-            <Button color="transparent" size="lg" simple>
-               Home
-            </Button>
-        </Link>
-
-          
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        
-        <Link to={"/landing-page"} className={classes.link}>
-            <Button color="transparent" size="lg" simple>
-               Projects
-            </Button>
-        </Link>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link to={"/profile-page"} className={classes.link}>
-            <Button color="transparent" size="lg" simple>
-               About Me
-            </Button>
-        </Link>
-      </ListItem>
+      
       <ListItem className={classes.listItem}>
         <Button
           href="/"
           color="transparent"
           className={classes.navLink}
+          >Home
+          </Button>
+      </ListItem>      <ListItem className={classes.listItem}>
+        <Button
+          href="/landing-page"
+          color="transparent"
+          className={classes.navLink}
+          >Projects
+          </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/profile-page"
+          color="transparent"
+          className={classes.navLink}
+          >About Me
+          </Button>
+      </ListItem>
+      
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/login-page"
+          color="transparent"
+          className={classes.navLink}
           >Contact Me
-          >
+          
 
           </Button>
       </ListItem>

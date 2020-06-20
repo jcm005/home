@@ -47,7 +47,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand=""
+        brand="Joseph Mattern"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -69,15 +69,15 @@ export default function ProfilePage(props) {
 
                   <div className={classes.name}>
                     <h3 className={classes.title}>Joseph Mattern</h3>
-                    <h4>Projects & Content</h4>
-                    <h7>Self Taught Developer</h7>
+                    <h4>B.S. Physics</h4>
+                    <h7>Self Taught Python Developer & Data Analyst </h7>
                     
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
-              <p>
+              <p> Hello, my name is Joseph Mattern. I recently graduated from StonyBrook University in January 2020, with a B.S. in Physics. I'm currently seeking a role as a Software Engineer or Data Scientist/Analysis.
               </p>
             </div>
             <GridContainer justify="center">
