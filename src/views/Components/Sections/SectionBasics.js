@@ -72,19 +72,13 @@ export default function SectionBasics() {
     <div className={classes.sections}>
       <div className={classes.container}>
         <div className={classes.title}>
-          <h2></h2>
+          <h2>Projects</h2>
         </div>
 
 
 
         <div id="buttons">
-          <div className={classes.title}>
-            <h3>
-              Buttons
-              <br />
-              <small>Pick your style</small>
-            </h3>
-          </div>
+          
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={8}>
             </GridItem>

@@ -68,9 +68,9 @@ export default function ProfilePage(props) {
                   </div>
 
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Joseph Mattern</h3>
-                    <h4>B.S. Physics</h4>
-                    <h7>Self Taught Python Developer & Data Analyst </h7>
+                    <h3 className={classes.title}>B.S. Physics</h3>
+                    
+                    <h4>Self Taught Python Developer & Data Analyst </h4>
                     
                   </div>
                 </div>

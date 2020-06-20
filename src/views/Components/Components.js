@@ -51,14 +51,14 @@ export default function Components(props) {
         {...rest}
       />
       
-      <Parallax image={require("assets/img/landing-bg.jpg")}>
+      <Parallax image={require("assets/img/mountain.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
                 <h1 className={classes.title}>Welcome&#44; I&#39;m Joseph Mattern.</h1>
                 <h3 className={classes.subtitle}>
-                  Check out my projects & content.
+                  
                 </h3>
               </div>
             </GridItem>
@@ -69,12 +69,7 @@ export default function Components(props) {
         <ViewProfile />
         <SectionBasics />
 
-        
-         
-        <SectionTypography />
-        <SectionJavascript />
-        <SectionCompletedExamples />
-        
+      
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
             <Button color="primary" size="lg" simple>
@@ -82,8 +77,7 @@ export default function Components(props) {
             </Button>
           </Link>
         </GridItem>
-        <SectionExamples />
-        <SectionDownload />
+        
       </div>
     </div>
   );
