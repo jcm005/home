@@ -47,7 +47,7 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="Joseph Mattern"
+        brand=""
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -66,9 +66,10 @@ export default function ProfilePage(props) {
                   <div>
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
+
                   <div className={classes.name}>
                     <h3 className={classes.title}>Joseph Mattern</h3>
-                    <h6>B.S. Physics</h6>
+                    <h4>Projects & Content</h4>
                     <h7>Self Taught Developer</h7>
                     
                   </div>
@@ -77,20 +78,16 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
               </p>
             </div>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
                 <NavPills
                   alignCenter
-                  color="primary"
+                  color="info"
                   tabs={[
                     {
-                      tabButton: "Studio",
+                      tabButton: "Programs",
                       tabIcon: Camera,
                       tabContent: (
                         <GridContainer justify="center">
@@ -122,7 +119,7 @@ export default function ProfilePage(props) {
                       )
                     },
                     {
-                      tabButton: "Work",
+                      tabButton: "Research",
                       tabIcon: Palette,
                       tabContent: (
                         <GridContainer justify="center">
@@ -159,7 +156,7 @@ export default function ProfilePage(props) {
                       )
                     },
                     {
-                      tabButton: "Favorite",
+                      tabButton: "Presentations",
                       tabIcon: Favorite,
                       tabContent: (
                         <GridContainer justify="center">
@@ -202,7 +199,7 @@ export default function ProfilePage(props) {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }
