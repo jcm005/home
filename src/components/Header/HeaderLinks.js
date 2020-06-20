@@ -31,14 +31,15 @@ export default function HeaderLinks(props) {
         <Button
           href="/"
           color="transparent"
-          className={classes.navLink}
+          className={classes.link}
           >Home
           </Button>
-      </ListItem>      <ListItem className={classes.listItem}>
+      </ListItem>      
+      <ListItem className={classes.listItem}>
         <Button
           href="/landing-page"
           color="transparent"
-          className={classes.navLink}
+          className={classes.link}
           >Projects
           </Button>
       </ListItem>
@@ -46,7 +47,7 @@ export default function HeaderLinks(props) {
         <Button
           href="/profile-page"
           color="transparent"
-          className={classes.navLink}
+          className={classes.link}
           >About Me
           </Button>
       </ListItem>
@@ -55,7 +56,7 @@ export default function HeaderLinks(props) {
         <Button
           href="/login-page"
           color="transparent"
-          className={classes.navLink}
+          className={classes.link}
           >Contact Me
           
 
