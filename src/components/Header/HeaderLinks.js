@@ -44,7 +44,7 @@ export default function HeaderLinks(props) {
               target="_blank"
               className={classes.dropdownLink}
             >
-              QuantitativeTrader
+              
             </a>
           ]}
         />
@@ -60,12 +60,12 @@ export default function HeaderLinks(props) {
         </Tooltip>*/}
         <Tooltip
           id="instagram-twitter"
-          title="Follow us on twitter"
+          title="Check Out My Linkedin"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://www.linkedin.com/in/joseph-mattern-990399149"
             target="_blank"
             color="transparent"
             className={classes.navLink}
