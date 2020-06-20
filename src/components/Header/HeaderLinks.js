@@ -36,22 +36,58 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="landing-page" className={classes.dropdownLink}>
-              About Me 
-            </Link>,
+            
             <a
               href="https://github.com/jcm005/QuantitativeTrader"
               target="_blank"
               className={classes.dropdownLink}
-            >
+            >Quantitative Trading
               
             </a>
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        
+        <Button
+          href="/"
+          color="transparent"
+          className={classes.navLink}
+          >Home
+          >
+
+          </Button>
       </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="landing-page"
+          color="transparent"
+          className={classes.navLink}
+          >Projects
+          >
+
+          </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/profile-page"
+          color="transparent"
+          className={classes.navLink}
+          >About Me
+          >
+
+          </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href=""
+          color="transparent"
+          className={classes.navLink}
+          >Contact Me
+          >
+
+          </Button>
+      </ListItem>
+      
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
           <IconButton aria-label="Delete">
@@ -70,44 +106,12 @@ export default function HeaderLinks(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
+            <i className={classes.socialIcons + " fab fa-linkedin"} />
           </Button>
         </Tooltip>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Follow us on facebook"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on instagram"
-          placement={window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
+      
+      
     </List>
   );
 }

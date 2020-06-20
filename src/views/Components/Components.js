@@ -37,6 +37,7 @@ export default function Components(props) {
   const { ...rest } = props;
   return (
     <div>
+      
       <Header
         brand="Joseph Mattern"
         rightLinks={<HeaderLinks />}
@@ -48,6 +49,7 @@ export default function Components(props) {
         }}
         {...rest}
       />
+      
       <Parallax image={require("assets/img/bg7.jpg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -55,7 +57,7 @@ export default function Components(props) {
               <div className={classes.brand}>
                 <h1 className={classes.title}>Welcome&#44; I&#39;m Joseph Mattern.</h1>
                 <h3 className={classes.subtitle}>
-                  Check out my projects/content.
+                  Check out my projects & content.
                 </h3>
               </div>
             </GridItem>
@@ -74,7 +76,6 @@ export default function Components(props) {
         </GridItem>
         
       </div>
-      
     </div>
   );
 }
