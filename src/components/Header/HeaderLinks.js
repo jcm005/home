@@ -42,13 +42,7 @@ export default function HeaderLinks(props) {
             </Button>
           </Link>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link to={"/profile-page"} className={classes.link}>
-            <Button color="info" size="lg" simple>
-              About Me
-            </Button>
-          </Link>
-      </ListItem>
+      
       
       <ListItem className={classes.listItem}>
         <Link to={"/login-page"} className={classes.link}>

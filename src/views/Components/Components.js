@@ -27,6 +27,7 @@ import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 import SectionLogin from "./Sections/SectionLogin.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
+import ViewProfile from "../ProfilePage/ProfilePage.js"
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -50,7 +51,7 @@ export default function Components(props) {
         {...rest}
       />
       
-      <Parallax image={require("assets/img/bg7.jpg")}>
+      <Parallax image={require("assets/img/landing-bg.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
@@ -64,19 +65,16 @@ export default function Components(props) {
           </GridContainer>
         </div>
       </Parallax>
-        
-
        <div className={classNames(classes.main, classes.mainRaised)}>
+        <ViewProfile />
         <SectionBasics />
-        <SectionNavbars />
-        <SectionTabs />
-        <SectionPills />
-        <SectionNotifications />
+
+        
+         
         <SectionTypography />
         <SectionJavascript />
-        <SectionCarousel />
         <SectionCompletedExamples />
-        <SectionLogin />
+        
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
             <Button color="primary" size="lg" simple>
