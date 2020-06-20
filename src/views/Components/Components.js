@@ -62,15 +62,13 @@ export default function Components(props) {
           </GridContainer>
         </div>
       </Parallax>
+        
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        
-        
-        <SectionLogin />
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
             <Button color="primary" size="lg" simple>
-              View Login Page
+              Contact Me
             </Button>
           </Link>
         </GridItem>
