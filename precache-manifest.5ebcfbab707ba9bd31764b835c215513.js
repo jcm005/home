@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ea0e3c2bcf59c4cf448c30a8b60ce7d",
+    "revision": "d43a5c0a93e1292a6f26c646fdf03c24",
     "url": "/home/index.html"
   },
   {
-    "revision": "2339f3d9410bfc8a23be",
+    "revision": "f9a19971ddd62cde412d",
     "url": "/home/static/css/main.126c14d6.chunk.css"
   },
   {
-    "revision": "8a9024ff24a6197349a9",
-    "url": "/home/static/js/2.faeddcdf.chunk.js"
+    "revision": "6e4b47a7279c2509b125",
+    "url": "/home/static/js/2.bdb824e7.chunk.js"
   },
   {
     "revision": "8dbc9bd92b344a5deca62eeacc09fc2d",
-    "url": "/home/static/js/2.faeddcdf.chunk.js.LICENSE.txt"
+    "url": "/home/static/js/2.bdb824e7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2339f3d9410bfc8a23be",
-    "url": "/home/static/js/main.3d87596e.chunk.js"
+    "revision": "f9a19971ddd62cde412d",
+    "url": "/home/static/js/main.7bb0c16a.chunk.js"
   },
   {
     "revision": "b54ac55316918141f470",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9813593cc577a319a2201342ef0fb237",
     "url": "/home/static/media/cynthia-del-rio.9813593c.jpg"
+  },
+  {
+    "revision": "16b1fed54153dc1edf3245841e3e9e5d",
+    "url": "/home/static/media/joe.16b1fed5.jpg"
   },
   {
     "revision": "e0508cc923eb0b5e68ca6783c53d0f1d",
