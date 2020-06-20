@@ -38,7 +38,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
+        brand="Joseph Mattern"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -48,14 +48,14 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}>
+      <Parallax image={require("assets/img/bg7.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
+                <h1 className={classes.title}>Welcome&#44; I&#39;m Joseph Mattern.</h1>
                 <h3 className={classes.subtitle}>
-                  A Badass Material-UI Kit based on Material Design.
+                  Check out my projects/content.
                 </h3>
               </div>
             </GridItem>
@@ -64,15 +64,8 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
-        <SectionNavbars />
-        <SectionTabs />
-        <SectionPills />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavascript />
-        <SectionCarousel />
-        <SectionCompletedExamples />
+        
+        
         <SectionLogin />
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
@@ -81,10 +74,9 @@ export default function Components(props) {
             </Button>
           </Link>
         </GridItem>
-        <SectionExamples />
-        <SectionDownload />
+        
       </div>
-      <Footer />
+      
     </div>
   );
 }

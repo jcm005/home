@@ -72,8 +72,11 @@ export default function SectionBasics() {
     <div className={classes.sections}>
       <div className={classes.container}>
         <div className={classes.title}>
-          <h2>Basic Elements</h2>
+          <h2></h2>
         </div>
+
+
+
         <div id="buttons">
           <div className={classes.title}>
             <h3>
@@ -84,19 +87,6 @@ export default function SectionBasics() {
           </div>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={8}>
-              <Button color="primary">Default</Button>
-              <Button color="primary" round>
-                round
-              </Button>
-              <Button color="primary" round>
-                <Favorite className={classes.icons} /> with icon
-              </Button>
-              <Button justIcon round color="primary">
-                <Favorite className={classes.icons} />
-              </Button>
-              <Button color="primary" simple>
-                simple
-              </Button>
             </GridItem>
           </GridContainer>
           <div className={classes.title}>
