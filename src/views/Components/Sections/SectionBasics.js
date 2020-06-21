@@ -1,19 +1,13 @@
 // the section that holds my projects 
 import React from "react";
 // plugin that creates slider
-import Slider from "nouislider";
 import classNames from "classnames"
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
-import Radio from "@material-ui/core/Radio";
 import Switch from "@material-ui/core/Switch";
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-import People from "@material-ui/icons/People";
-import Check from "@material-ui/icons/Check";
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -45,8 +39,7 @@ export default function SectionBasics() {
     classes.imgRounded,
     classes.imgFluid
   );
-  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
-
+  
   React.useEffect(() => {
    
    
@@ -91,7 +84,7 @@ export default function SectionBasics() {
                 className={classes.largeTitle}
                 size='lg'
                 >
-                Check it Out On Github
+                check it out on github
                 </Button>
               </GridItem>
               <h4 className={classes.cardTitle}>

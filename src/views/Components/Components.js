@@ -85,115 +85,12 @@ export default function Components(props) {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classes.space30} />
+      <div className={classes.space50} />
 
       <ViewProfile />
 
        <div className={classNames(classes.main)}>
-       <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
-                <NavPills
-                  alignCenter
-                  color="info"
-                  tabs={[
-                    {
-                      tabButton: "Projects",
-                      tabIcon: CodeIcon,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <Card plain>
-                              
-                                <h2>Quantitative Trader</h2>
-
-                              
-                              <div className={classes.space30} />
-
-                              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                                <img src={profile} alt="..." className={imageClasses} />
-                              </GridItem>
-                              <GridItem xs={12} sm={12} md={8}>
-                              <CardBody>
-                                <p className={classes.description}>
-                                  In this project I developed two frameworks in Python that uses alpaca.markets 
-                                  API to trade paper and real stock, based on custom algorithms
-                                   influenced by multitudes of indicators, and market research. 
-                                </p>
-                              </CardBody>
-                                <Button href='https://github.com/jcm005/QuantitativeTrader' 
-                                color='info' 
-                                className={classes.largeTitle}
-                                size='lg'
-                                >
-                                Check it Out On Github
-                                </Button>
-                              </GridItem>
-                              <h4 className={classes.cardTitle}>
-                              More Updates Coming Soon
-                              </h4>
-                              
-                              <CardFooter className={classes.justifyCenter}>
-                                
-                              </CardFooter>
-                            </Card>
-                            
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src=''
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src=''
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      )
-                    },
-                    {
-                      tabButton: "Content",
-                      tabIcon: PollIcon,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src=''
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src=''
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src=''
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src=''
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src=''
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      )
-                    }
-                  ]}
-              />
-            </GridItem>
-          </GridContainer>
+        
 
 
         <SectionBasics />
