@@ -78,7 +78,9 @@ export default function ProfilePage(props) {
             </GridContainer>
             <div className={classes.description}>
               <p> Hello, my name is Joseph Mattern. I recently graduated from StonyBrook University in January 2020, with a B.S. in Physics. I'm currently seeking a role as a Software Engineer or Data Scientist/Analysis.
+
               </p>
+
             </div>
             
           </div>

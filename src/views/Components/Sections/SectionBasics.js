@@ -1,3 +1,4 @@
+// the section that holds my projects 
 import React from "react";
 // plugin that creates slider
 import Slider from "nouislider";
@@ -65,30 +66,22 @@ export default function SectionBasics() {
       <div className={classes.container}>
         <div className={classes.title}>
           <h1 className={classes.title}>Projects</h1>
-      
         </div>
-
-
-        
          <GridContainer justify="center">
-
           <div id="Quant" className={classes.container}>
-            
-              
-              
-            
-            
             <Card plain>
               <h3 className={classes.title}>Quantitative Trader</h3>
+              <div className={classes.space30} />
+
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img src={profile} alt="..." className={imageClasses} />
               </GridItem>
               <GridItem xs={12} sm={12} md={8}>
               <CardBody>
                 <p className={classes.description}>
-                  In this project I developed two frameworks in Python that uses alpaca.markets API to trade paper and real stock, based on custom algorithms influenced by multitudes of indicators, and market research. 
-                  
-
+                  In this project I developed two frameworks in Python that uses alpaca.markets 
+                  API to trade paper and real stock, based on custom algorithms
+                   influenced by multitudes of indicators, and market research. 
                 </p>
               </CardBody>
                 <Button href='https://github.com/jcm005/QuantitativeTrader' 
@@ -100,9 +93,7 @@ export default function SectionBasics() {
                 </Button>
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Some text here 
-                <br />
-                <small className={classes.smallTitle}>Model</small>
+              More Updates Coming Soon
               </h4>
               
               <CardFooter className={classes.justifyCenter}>
@@ -114,7 +105,6 @@ export default function SectionBasics() {
           
           
         </div>
-        
         <div className={classes.space70} />
       </div>
     
