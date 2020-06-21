@@ -45,6 +45,8 @@ export default function SectionBasics() {
     classes.imgRounded,
     classes.imgFluid
   );
+  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+
   React.useEffect(() => {
    
    
@@ -105,7 +107,7 @@ export default function SectionBasics() {
           
           
         </div>
-        <div className={classes.space70} />
+
       </div>
     
   );
