@@ -68,8 +68,8 @@ export default function SectionBasics() {
               <h3 className={classes.title}>Quantitative Trader</h3>
               <div className={classes.space30} />
 
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={profile} alt="..." className={imageClasses} />
+              <GridItem xs={12} sm={12} md={6} className={classes.textCenter}>
+                <img src={profile}  className={imageClasses} />
               </GridItem>
               <GridItem xs={12} sm={12} md={8}>
               <CardBody>

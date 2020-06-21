@@ -20,14 +20,8 @@ import SectionNavbars from "./Sections/SectionNavbars.js";
 import SectionTabs from "./Sections/SectionTabs.js";
 import SectionPills from "./Sections/SectionPills.js";
 import SectionNotifications from "./Sections/SectionNotifications.js";
-import SectionTypography from "./Sections/SectionTypography.js";
-import SectionJavascript from "./Sections/SectionJavascript.js";
-import SectionCarousel from "./Sections/SectionCarousel.js";
-import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
-import SectionLogin from "./Sections/SectionLogin.js";
-import SectionExamples from "./Sections/SectionExamples.js";
-import SectionDownload from "./Sections/SectionDownload.js";
 import ViewProfile from "../ProfilePage/ProfilePage.js"
+import Sectionpdf from './Sections/SectionPdf.js'
 import Camera from "@material-ui/icons/Camera";
 
 import NavPills from "components/NavPills/NavPills.js";
@@ -40,8 +34,12 @@ import profile from "assets/img/faces/plot.jpg";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
+import { Document } from "react-pdf"
+import { PDFViewer } from '@react-pdf/renderer';
+
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import profilestyles from "assets/jss/material-kit-react/views/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
@@ -92,8 +90,91 @@ export default function Components(props) {
        <div className={classNames(classes.main)}>
         
 
+          <GridContainer justify="center">
+              <GridItem xs={20} sm={20} md={20} className={classes.navWrapper}>
+                <NavPills
+                  alignCenter
+                  color="info"
+                  tabs={[
+                    {
+                      tabButton: "Projects",
+                      tabIcon: CodeIcon,
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem xs={12} sm={12} md={4}>
+                            <Card plain>
+                              
+                                <h2>Quantitative Trader</h2>
 
-        <SectionBasics />
+                              
+                              <div className={classes.space30} />
+
+                              <GridItem xs={12} sm={12} md={6}>
+                                <img src={profile} alt="..." className={imageClasses} />
+                              </GridItem>
+                              <GridItem xs={12} sm={12} md={8}>
+                                <CardBody>
+                                  <p className={classes.description}>
+                                    In this project I developed two frameworks in Python that uses alpaca.markets 
+                                    API to trade paper and real stock, based on custom algorithms
+                                     influenced by multitudes of indicators, and market research. 
+                                  </p>
+                                </CardBody>
+                                <Button href='https://github.com/jcm005/QuantitativeTrader' 
+                                color='info' 
+                                className={classes.largeTitle}
+                                size='lg'
+                                >
+                                Check it Out On Github
+                                </Button>
+                                <h4 className={classes.cardTitle}>
+                              More Updates Coming Soon
+                              </h4>
+                              </GridItem>
+                              
+                              
+                              <CardFooter className={classes.justifyCenter}>
+                                
+                              </CardFooter>
+                            </Card>
+                            
+                          </GridItem>
+                          <GridItem xs={12} sm={12} md={4}>
+                            
+                            
+                          </GridItem>
+                        </GridContainer>
+                      )
+                    },
+                    {
+                      tabButton: "Content",
+                      tabIcon: PollIcon,
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem xs={12} sm={12} md={4}>
+                            
+                            <img
+                              alt="..."
+                              src=''
+                              className={navImageClasses}
+                            />
+                            
+                          </GridItem>
+                          <GridItem xs={12} sm={12} md={4}>
+                            
+                            <img
+                              alt="..."
+                              src=''
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                        </GridContainer>
+                      )
+                    }
+                  ]}
+              />
+            </GridItem>
+          </GridContainer>
 
       
         <GridItem md={12} className={classes.textCenter}>
