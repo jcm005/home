@@ -16,24 +16,19 @@ import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionBasics from "./Sections/SectionBasics.js";
-import SectionNavbars from "./Sections/SectionNavbars.js";
-import SectionTabs from "./Sections/SectionTabs.js";
-import SectionPills from "./Sections/SectionPills.js";
-import SectionNotifications from "./Sections/SectionNotifications.js";
 import ViewProfile from "../ProfilePage/ProfilePage.js"
-import Sectionpdf from './Sections/SectionPdf.js'
 import Camera from "@material-ui/icons/Camera";
 
 import NavPills from "components/NavPills/NavPills.js";
-import Palette from "@material-ui/icons/Palette";
 import CodeIcon from '@material-ui/icons/Code';
-import StorageIcon from '@material-ui/icons/Storage';
 import PollIcon from '@material-ui/icons/Poll';
 
 import profile from "assets/img/faces/plot.jpg";
+
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
+
 import { Document } from "react-pdf"
 import { PDFViewer } from '@react-pdf/renderer';
 
@@ -52,6 +47,7 @@ export default function Components(props) {
     classes.imgRounded,
     classes.imgFluid
   );
+   
   
 
   return (
@@ -91,7 +87,7 @@ export default function Components(props) {
         
 
           <GridContainer justify="center">
-              <GridItem xs={20} sm={20} md={20} className={classes.navWrapper}>
+              <GridItem xs={10} sm={10} md={8} className={classes.navWrapper}>
                 <NavPills
                   alignCenter
                   color="info"
@@ -100,8 +96,8 @@ export default function Components(props) {
                       tabButton: "Projects",
                       tabIcon: CodeIcon,
                       tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
+                        <GridContainer justify="center" >
+                          <GridItem xs={10} sm={10} md={8}>
                             <Card plain>
                               
                                 <h2>Quantitative Trader</h2>
@@ -109,11 +105,10 @@ export default function Components(props) {
                               
                               <div className={classes.space30} />
 
-                              <GridItem xs={12} sm={12} md={6}>
+                              <GridItem xs={10} sm={10} md={8} lg={8}>
                                 <img src={profile} alt="..." className={imageClasses} />
-                              </GridItem>
-                              <GridItem xs={12} sm={12} md={8}>
-                                <CardBody>
+                              
+                                <CardBody xs={10} sm={10} md={8} >
                                   <p className={classes.description}>
                                     In this project I developed two frameworks in Python that uses alpaca.markets 
                                     API to trade paper and real stock, based on custom algorithms
@@ -127,9 +122,7 @@ export default function Components(props) {
                                 >
                                 Check it Out On Github
                                 </Button>
-                                <h4 className={classes.cardTitle}>
-                              More Updates Coming Soon
-                              </h4>
+                                
                               </GridItem>
                               
                               
@@ -153,11 +146,7 @@ export default function Components(props) {
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
                             
-                            <img
-                              alt="..."
-                              src=''
-                              className={navImageClasses}
-                            />
+
                             
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
@@ -177,13 +166,7 @@ export default function Components(props) {
           </GridContainer>
 
       
-        <GridItem md={12} className={classes.textCenter}>
-          <Link to={"/login-page"} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              View Login Page
-            </Button>
-          </Link>
-        </GridItem>
+        
         
       </div>
     </div>

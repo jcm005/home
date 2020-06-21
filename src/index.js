@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
+import { Document } from "react-pdf"
 
 import "assets/scss/material-kit-react.scss?v=1.9.0";
 
@@ -24,3 +25,4 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
+
