@@ -45,28 +45,8 @@ export default function SectionBasics() {
     classes.imgFluid
   );
   React.useEffect(() => {
-    if (
-      !document
-        .getElementById("sliderRegular")
-        .classList.contains("noUi-target")
-    ) {
-      Slider.create(document.getElementById("sliderRegular"), {
-        start: [40],
-        connect: [true, false],
-        step: 1,
-        range: { min: 0, max: 100 }
-      });
-    }
-    if (
-      !document.getElementById("sliderDouble").classList.contains("noUi-target")
-    ) {
-      Slider.create(document.getElementById("sliderDouble"), {
-        start: [20, 60],
-        connect: [false, true, false],
-        step: 1,
-        range: { min: 0, max: 100 }
-      });
-    }
+   
+   
     return function cleanup() {};
   });
   const handleToggle = value => {
@@ -136,24 +116,6 @@ export default function SectionBasics() {
         </div>
         
         <div className={classes.space70} />
-        <div id="checkRadios">
-          
-        </div>
-        <div className={classes.space70} />
-        
-        <div id="sliders">
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <div className={classes.title}>
-                <h3>Sliders</h3>
-              </div>
-              <div id="sliderRegular" className="slider-primary" />
-              <br />
-              <div id="sliderDouble" className="slider-info" />
-            </GridItem>
-           
-          </GridContainer>
-        </div>
       </div>
     
   );
