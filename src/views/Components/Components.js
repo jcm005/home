@@ -99,11 +99,8 @@ export default function Components(props) {
                         <GridContainer justify="center" >
                           <GridItem xs={10} sm={10} md={8}>
                             <Card plain>
-                              
                                 <h2>Quantitative Trader</h2>
-
-                              
-                              <div className={classes.space30} />
+                                <div className={classes.space30} />
 
                               <GridItem xs={10} sm={10} md={8} lg={8}>
                                 <img src={profile} alt="..." className={imageClasses} />
@@ -124,13 +121,9 @@ export default function Components(props) {
                                 </Button>
                                 
                               </GridItem>
+
                               
-                              
-                              <CardFooter className={classes.justifyCenter}>
-                                
-                              </CardFooter>
                             </Card>
-                            
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
                             
@@ -145,7 +138,12 @@ export default function Components(props) {
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                            
+                            <Button
+                            href=''
+                            color='info'
+                            Nuclear Magnetic Resonace
+                            >
+                            </Button>
 
                             
                           </GridItem>
