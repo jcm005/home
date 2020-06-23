@@ -22,6 +22,7 @@ import Camera from "@material-ui/icons/Camera";
 import NavPills from "components/NavPills/NavPills.js";
 import CodeIcon from '@material-ui/icons/Code';
 import PollIcon from '@material-ui/icons/Poll';
+import SchoolIcon from '@material-ui/icons/School';
 
 import profile from "assets/img/faces/plot.jpg";
 
@@ -98,20 +99,19 @@ export default function Components(props) {
                       tabContent: (
                         <GridContainer justify="center" >
                           <GridItem xs={10} sm={10} md={8}>
-                            <Card plain>
-                                <h2>Quantitative Trader</h2>
+                            <Card >
+                                <h2>Quantitative Trader </h2>
                                 <div className={classes.space30} />
 
                               <GridItem xs={10} sm={10} md={8} lg={8}>
                                 <img src={profile} alt="..." className={imageClasses} />
                               
-                                <CardBody xs={10} sm={10} md={8} >
                                   <p className={classes.description}>
                                     In this project I developed two frameworks in Python that uses alpaca.markets 
                                     API to trade paper and real stock, based on custom algorithms
                                      influenced by multitudes of indicators, and market research. 
                                   </p>
-                                </CardBody>
+                                
                                 <Button href='https://github.com/jcm005/QuantitativeTrader' 
                                 color='info' 
                                 className={classes.largeTitle}
@@ -125,11 +125,9 @@ export default function Components(props) {
                               
                             </Card>
                           </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            
-                            
-                          </GridItem>
-                        </GridContainer>
+                       </GridContainer>
+                    
+                          
                       )
                     },
                     {
@@ -137,27 +135,43 @@ export default function Components(props) {
                       tabIcon: PollIcon,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <Button
-                            href=''
-                            color='info'
-                            Nuclear Magnetic Resonace
-                            >
-                            </Button>
-
-                            
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            
-                            <img
-                              alt="..."
-                              src=''
-                              className={navImageClasses}
-                            />
-                          </GridItem>
+                          
                         </GridContainer>
-                      )
-                    }
+                      ),
+                    },
+
+                    {
+                      tabButton: "Certifications",
+                      tabIcon: SchoolIcon,
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem xs={10} sm={10} md={10}>
+                            <Card>
+                              <Button color="info" size="lg" href='https://www.udemy.com/certificate/UC-2cb01624-5c85-4e95-8019-b2998d903e55/' >
+                                Complete Python Developer in 2020
+                              </Button>
+                            </Card>
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={10}>
+                           <Card>
+                            <Button color='info' size='lg' href='https://www.udemy.com/certificate/UC-81bba2a9-8eb2-4132-aeeb-dacf61602b40/' >
+                                Statistics for Data Science and Business Analysis
+                            </Button>
+                          </Card>
+                            
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={10}>
+
+                            <Card>
+                             <Button color='info' size='lg' href='https://www.udemy.com/certificate/UC-98fabd51-6343-44c6-bdb5-eda53b7bbdc9/' >
+                                Python for Data Science and Machine Learning Bootcamp
+                             </Button>
+                            </Card>
+                          </GridItem>
+                          
+                        </GridContainer>
+                      ),
+                    },
                   ]}
               />
             </GridItem>
